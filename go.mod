@@ -1,4 +1,4 @@
-module github.com/Bouby308/coraza-caddy/
+module github.com/Bouby308/coraza-caddy/v2
 
 go 1.18
 

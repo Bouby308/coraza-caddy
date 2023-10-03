@@ -30,7 +30,7 @@ func processRequest(tx types.Transaction, req *http.Request) (*types.Interruptio
 
 	var in *types.Interruption
 	// There is no socket access in the request object, so we neither know the server client nor port.
-	tx.ProcessConnection(client, cport, "", 0)
+	tx.ProcessConnection(client, cport, req.URL.Host, 0)
 	tx.ProcessURI(req.URL.String(), req.Method, req.Proto)
 	for k, vr := range req.Header {
 		for _, v := range vr {

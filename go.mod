@@ -1,4 +1,4 @@
-module github.com/corazawaf/coraza-caddy/v2
+module github.com/Bouby308/coraza-caddy/dev
 
 go 1.18
 
